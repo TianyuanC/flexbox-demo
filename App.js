@@ -1,21 +1,101 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { View } from "react-native";
 
 export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
+    render() {
+        return (
+            <View
+                style={{
+                    flex: 1
+                }}
+            >
+                <View
+                    style={{
+                        flex: 2,
+                        flexDirection: "row",
+                        borderColor: "black",
+                        borderWidth: "5px"
+                    }}
+                >
+                    <View
+                        style={{
+                            flex: 1,
+                            borderColor: "black",
+                            borderWidth: "5px"
+                        }}
+                    >
+                        <View
+                            style={{
+                                flex: 1,
+                                borderColor: "black",
+                                borderWidth: "5px"
+                            }}
+                        />
+                        <View
+                            style={{
+                                flex: 1,
+                                borderColor: "black",
+                                borderWidth: "5px"
+                            }}
+                        />
+                    </View>
+                    <View
+                        style={{
+                            flex: 3,
+                            backgroundColor: "red",
+                            borderColor: "black",
+                            borderWidth: "5px"
+                        }}
+                    />
+                </View>
+                <View
+                    style={{
+                        flex: 1,
+                        flexDirection: "row",
+                        borderColor: "black",
+                        borderWidth: "5px"
+                    }}
+                >
+                    <View
+                        style={{
+                            flex: 2,
+                            backgroundColor: "blue",
+                            borderColor: "black",
+                            borderWidth: "5px"
+                        }}
+                    />
+                    <View
+                        style={{
+                            flex: 5,
+                            borderColor: "black",
+                            borderWidth: "5px"
+                        }}
+                    />
+                    <View
+                        style={{
+                            flex: 1,
+                            borderColor: "black",
+                            borderWidth: "5px"
+                        }}
+                    >
+                        <View
+                            style={{
+                                flex: 1,
+                                borderColor: "black",
+                                borderWidth: "5px"
+                            }}
+                        />
+                        <View
+                            style={{
+                                flex: 1,
+                                backgroundColor: "yellow",
+                                borderColor: "black",
+                                borderWidth: "5px"
+                            }}
+                        />
+                    </View>
+                </View>
+            </View>
+        );
+    }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
